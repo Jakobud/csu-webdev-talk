@@ -10,6 +10,11 @@ section.designers ul {
   vertical-align: middle;
 }
 
+.reveal section.php-frameworks img,
+.reveal section.open-source img {
+  vertical-align: bottom;
+}
+
 .table {
   display: table;
   width: 100%;
@@ -29,4 +34,12 @@ section.designers ul {
 
 .table-cell--4 {
   width: 25%;
+}
+
+.monospace {
+  font-family: monospace !important;
+}
+
+.fa-star {
+  color: yellow;
 }

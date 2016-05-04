@@ -237,6 +237,11 @@
         </section>
 
         <section>
+          <h2>Website is launched... </h2>
+          <h3>Now Rinse and Repeat</h3>
+        </section>
+
+        <section>
           <h1>Advanced Topics</h1>
           <small>Next level stuff</small>
         </section>
@@ -255,25 +260,20 @@
         <section>
 
           <section>
-            <h2>CSS Preprocessors</h2>
+            <h2>CSS</h2>
             <ul>
               <li class="fragment">CSS is easy. At first...</li>
               <li class="fragment">As it grows, it becomes tricky</li>
               <li class="fragment">1000+ lines of CSS == difficult to maintain</li>
             </ul>
-          </section>
-
-          <section>
-            <h2>CSS Preprocessors</h2>
-            <div class="table">
-              <div class="table-cell table-cell--2">
-                <img src="img/sass.png">
-                <p>www.sass-lang.com</p>
-              </div>
-              <div class="table-cell table-cell--2">
-                <img src="img/less.png">
-                <p>lesscss.org</p>
-              </div>
+            <br>
+            <br>
+            <div class="fragment">
+              <h2><i class="fa fa-star"></i> CSS Preprocessors</h2>
+              <ul>
+                <li>Write styles in a better language</li>
+                <li>Compile it into useable CSS for the browser</li>
+              </ul>
             </div>
           </section>
 
@@ -369,7 +369,6 @@ h2 {
 nav {
   ul {
     margin: 0;
-    padding: 0;
     list-style: none;
   }
 
@@ -379,7 +378,6 @@ nav {
     a {
       display: block;
       padding: 6px 12px;
-      text-decoration: none;
 
       &.purple { color: purple; }
     }
@@ -431,6 +429,140 @@ nav li a.purple {
 
         </section>
 
+        <!-- Responsive Design -->
+        <section>
+          <h2>Learn Responsive Design</h2>
+          <ul>
+            <li>CSS @media queries</li>
+            <li>Fluid Layouts</li>
+            <li>Responsive Images</li>
+            <li>CSS Transitions</li>
+          </ul>
+        </section>
+
+        <!-- Source Control -->
+        <section>
+          <h2>Source Control</h2>
+          <div class="table">
+            <div class="table-cell table-cell--2">
+              <img src="img/git.png">
+                <p class="fragment"> <i class="fa fa-star"></i> Use this one</p>
+            </div>
+            <div class="table-cell table-cell--2">
+              <img src="img/svn.png">
+            </div>
+          </div>
+        </section>
+
+        <!-- Open Source -->
+        <section class='open-source'>
+          <h2>Open Source</h2>
+          <div class="table">
+            <div class="table-cell table-cell--2">
+              <img src="img/github.png">
+              GitHub
+            </div>
+            <div class="table-cell table-cell--2">
+              <img src="img/bitbucket.png">
+              BitBucket
+            </div>
+          </div>
+        </section>
+
+        <!-- Open Source Frameworks -->
+        <section>
+          <section>
+            <h2>Open Source Frameworks</h2>
+            <p>Use them or roll my own?</p>
+            <div class="table fragment" data-fragment-index="1">
+              <div class="table-cell table-cell--2">
+                100% Custom
+                <ul>
+                  <li class="fragment" data-fragment-index="2">Small # of developers</li>
+                  <li class="fragment" data-fragment-index="3">Limited by your knowledge</li>
+                  <li class="fragment" data-fragment-index="4">Limited # of users</li>
+                  <li class="fragment" data-fragment-index="5">Is it secure? Are you sure?</li>
+                  <li class="fragment" data-fragment-index="6">What are Best Practices?</li>
+                  <li class="fragment" data-fragment-index="7">Private documentation</li>
+                  <li class="fragment" data-fragment-index="8">Can't hire for it</li>
+                </ul>
+              </div>
+              <div class="table-cell table-cell--2">
+                Open Source Framework
+                <ul>
+                  <li class="fragment" data-fragment-index="2">100's of developers</li>
+                  <li class="fragment" data-fragment-index="3">Smarter Developers</li>
+                  <li class="fragment" data-fragment-index="4">1000's, or millions of users</li>
+                  <li class="fragment" data-fragment-index="5">Very secure</li>
+                  <li class="fragment" data-fragment-index="6">Best Practices &amp; Standards</li>
+                  <li class="fragment" data-fragment-index="7">Public documentation</li>
+                  <li class="fragment" data-fragment-index="8">Easy to find developers</li>
+                </ul>
+                <p class="fragment"  data-fragment-index="9"> <i class="fa fa-star"></i> Winner</p>
+              </div>
+            </div>
+          </section>
+          <section class='php-frameworks'>
+            <h2>PHP Frameworks</h2>
+            <div class="table">
+              <div class="table-cell table-cell--4">
+                <img src="img/laravel.png">
+                Laravel
+                <p class="fragment"  data-fragment-index="14"> <i class="fa fa-star"></i> This one!</p>
+              </div>
+              <div class="table-cell table-cell--4">
+                <img src="img/symfony.png">
+                Symfony
+              </div>
+              <div class="table-cell table-cell--4">
+                <img src="img/cake.png">
+                Cake
+              </div>
+              <div class="table-cell table-cell--4">
+                <img src="img/yii.png">
+                Yii
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- ORMs and Query Builders -->
+        <section>
+          <section>
+            <h2>ORM - Object Relation Mapping</h2>
+            <ul>
+              <li class="fragment">Simplifies Database Communication</li>
+              <li class="fragment">DB Tables represented as PHP Objects</li>
+              <li class="fragment">Automatically secure</li>
+            </ul>
+          </section>
+          <section>
+            Without ORM
+            <pre><code>
+$query = "SELECT * FROM flights WHERE active='1' ORDER BY name DESC";
+
+if ($result = $mysqli->query($query)) {
+
+  while ($row = $result->fetch_assoc()) {
+    echo $row['destination'];
+  }
+
+}
+            </code></pre>
+            <div class="fragment">
+              With ORM
+              <pre><code>
+$flights = Flights::where('active',1)->orderBy('name','desc')->get();
+
+foreach ($flights as $flight) {
+  echo $flight->destination;
+}
+              </code></pre>
+            </div>
+            <div class="fragment">Laravel ORM: Eloquent</div>
+          </section>
+        </section>
+
         <!-- Backend Languages -->
         <section>
           <h2>Server-side Languages</h2>
@@ -458,41 +590,61 @@ nav li a.purple {
           </div>
         </section>
 
-        <!-- PHP Frameworks -->
+        <!-- CDNs -->
         <section>
-          <h2>PHP Frameworks</h2>
-          <div class="table">
-            <div class="table-cell table-cell--3">
-              <img src="img/laravel.png">
-            </div>
-            <div class="table-cell table-cell--3">
-              <img src="img/symfony.png">
-            </div>
-            <div class="table-cell table-cell--3">
-              <img src="img/cake.png">
-            </div>
-          </div>
+          <h2>CDN - Content Delivery Network</h2>
+          <ul>
+            <li>Distributed Network of Servers, serving content</li>
+            <li>Load common, popular libraries from CDNs</li>
+            <li>Loads faster</li>
+            <li>Popular libraries cached</li>
+          </ul>
+
+          <pre><code>
+<!-- Don't do this -->
+<script src="js/jquery.js"></script>
+
+<!-- Do this -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+          </code></pre>
+
+          <p>Google, jQuery, cdnjs.com (one of the best)</p>
         </section>
 
-        <!-- Node.js -->
-
-        <!-- Source Control -->
-
-        <!-- Templating -->
-
-        <!-- ORMs and Query Builders -->
-
-        <!-- Responsive Design -->
-
-        <!-- Font Icons and SVGs -->
-
-        <!-- CDNs -->
-
         <!-- Tools -->
-
-        <!-- Learning Resources -->
+        <section>
+          <h2>Tools and Resources</h2>
+          <ul>
+            <li class="fragment"><a href="http://caniuse.com">caniuse.com</a></li>
+            <li class="fragment"><a href="https://www.google.com/fonts">Google Fonts</a></li>
+            <li class="fragment"><a href="http://placehold.it">placehold.it</a></li>
+            <li class="fragment"><a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a></li>
+            <li class="fragment"><a href="http://codepen.io/">Codepen.io</a></li>
+            <li class="fragment"><a href="http://www.sassmeister.com">Sassmeister.com</a></li>
+            <li class="fragment"><a href="https://www.sublimetext.com">Sublime Text</a></li>
+            <li class="fragment">Chrome Dev Tools</li>
+          </ul>
+        </section>
 
         <!-- Photoshop -->
+        <section>
+          <h2>Learn Photoshop</h2>
+          <img src="img/photoshop.jpg" alt="">
+        </section>
+
+        <!-- Questions -->
+        <section>
+          <h2>Questions?</h2>
+        </section>
+
+        <!-- Thank you -->
+        <section>
+          <h1>Thank you</h1>
+          <p>Jake Wilson</p>
+          <p>jake.e.wilson@gmail.com</p>
+          <p>Slides available:</p>
+          <p class="monospace">goo.gl/HNDyYz</p>
+        </section>
 
       </div>
     </div>
@@ -506,6 +658,7 @@ nav li a.purple {
         history: true,
         transition: 'concave',
         controls: false,
+        previewLinks: true,
 
         // More info https://github.com/hakimel/reveal.js#dependencies
         dependencies: [

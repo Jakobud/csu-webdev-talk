@@ -8,6 +8,7 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/league.css">
+		<link rel="stylesheet" href="css/style.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -26,8 +27,9 @@
 		<div class="reveal">
 			<div class="slides">
 
+				<!-- Intro -->
 				<section>
-					<h3>A Glimpse into </h3>
+					<h3>A Glimpse Into </h3>
 					<h1>Modern Professional<br/>Web Development</h1>
 					<hr>
 					<p>Jake Wilson</p>
@@ -35,59 +37,140 @@
 					<p>jake.e.wilson@gmail.com</p>
 				</section>
 
+				<!-- Outline -->
 				<section>
+					<h2>Today's Talk</h2>
 					<ul>
-						<li>Web Development</li>
+						<li>High Level <br/>Web Development</li>
 						<li>Advanced Tools and Topics</li>
-						<li>Questions <small>(anytime or at the end)</small></li>
 					</ul>
+					<hr>
+					<p>Questions anytime</p>
+					<p>Slides available Online</p>
 				</section>
 
+				<!-- Who is involved -->
 				<section>
-					<h2>Who is involved</h2>
-					<h3>in making a website?</h3>
-					<hr>
-					<ul>
-						<li class="fragment">Web Developers
-							<ul>
-								<li class="fragment">Backend Developers</li>
-								<li class="fragment">Front-End Developers</li>
-								<li class="fragment">Full Stack Developers</li>
-							</ul>
-						</li>
-						<li class="fragment">Stakeholders
-							<ul>
-								<li class="fragment">Project Managers</li>
-								<li class="fragment">Your Boss</li>
-								<li class="fragment">Department Directors</li>
-								<li class="fragment">Clients</li>
-								<li class="fragment">Non-technical Employees</li>
-							</ul>
-						</li>
-						<li class="fragment">Designers</li>
-						<li class="fragment">Copywriters</li>
-						<li class="fragment">Legal</li>
-					</ul>
+
+					<section>
+						<h2>Who is involved</h2>
+						<h3>in making a website?</h3>
+					</section>
+
+					<section>
+						<h2>Web Developers</h2>
+						<ul>
+							<li class="fragment">Backend Developers</li>
+							<li class="fragment">Front-End Developers</li>
+							<li class="fragment">Full Stack Developers</li>
+							<li class="fragment">Database Developers</li>
+							<li class="fragment">IT Infastructure</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Stakeholders</h2>
+						<ul>
+							<li class="fragment">Project Managers</li>
+							<li class="fragment">Your Boss</li>
+							<li class="fragment">Department Directors</li>
+							<li class="fragment">Clients</li>
+							<li class="fragment">Non-technical Employees</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Finally...</h2>
+						<ul>
+							<li class="fragment">Designers</li>
+							<li class="fragment">Copywriters</li>
+							<li class="fragment">Legal</li>
+						</ul>
+					</section>
+
 				</section>
 
 				<!-- Requirements -->
 				<section>
-					<h2>Defining Requirements</h2>
-					<p>What function does the website serve?</p>
-					<p>Who is the website for?</p>
-					<p>What does the website need to do?</p>
-					<p>What is important and what is not important?</p>
+					<h2>Define the Requirements</h2>
+						<ul>
+							<li class="fragment">What function does the website serve?</li>
+							<li class="fragment">Who is the website for?</li>
+							<li class="fragment">What does the website need to do?</li>
+							<li class="fragment">What is important and what is not important?</li>
+							<li class="fragment">Big list of things for website</li>
+						</ul>
 				</section>
 
 				<!-- Designers -->
-				<!-- Wireframes -->
-				<!-- Final Design -->
+				<section class='designers'>
+
+					<section>
+						<h2>Concept Sketches</h2>
+						<ul>
+							<li>Involves stakeholders,<br/>designers & developers</li>
+							<li>Very rough</li>
+							<li>Initial Layout</li>
+							<li>Satisfy Stakeholder <br/>Requirements</li>
+						</ul>
+						<img class="stretch" src="img/sketch.jpg">
+					</section>
+
+					<section>
+						<img class="stretch" src="img/sketch.jpg">
+					</section>
+
+					<section>
+						<h2>Wireframes</h2>
+						<ul>
+							<li>Layout</li>
+							<li>Size of Images</li>
+							<li>Placeholders</li>
+							<li>Font Sizes</li>
+							<li>Typefaces</li>
+						</ul>
+						<img class="stretch" src="img/wireframe.jpg">
+					</section>
+
+					<section>
+						<img class="stretch" src="img/wireframe.jpg">
+					</section>
+
+					<section>
+						<h2>Final Layout</h2>
+						<ul>
+							<li>Actual Images</li>
+							<li>Actual Text</li>
+							<li>Actual Content</li>
+							<li>Ready for Development</li>
+						</ul>
+						<img class="stretch" src="img/layout.jpg">
+					</section>
+
+					<section>
+						<img class="stretch" src="img/layout.jpg">
+					</section>
+
+				</section>
 
 				<!-- Front-End Development -->
 
-				<!-- Backend Development -->
-
 				<!-- Database Modeling -->
+				<section>
+					<h3>Database Modeling</h3>
+					<img src="img/db-modeling.gif" class="stretch">
+				</section>
+
+				<!-- Backend Development -->
+				<section>
+					<ul>
+						<li class="fragment">Handling requests</li>
+						<li class="fragment">Fetching Dynamic Data</li>
+						<li class="fragment">Processing Forms</li>
+						<li class="fragment">Serving up the HTML</li>
+						<li class="fragment">Templating and Includes</li>
+					</ul>
+				</section>
 
 				<!-- Environments -->
 
@@ -134,11 +217,14 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+				transition: 'concave',
+				controls: false,
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/zoom-js/zoom.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]

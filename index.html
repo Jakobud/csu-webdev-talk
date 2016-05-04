@@ -1,294 +1,521 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Modern Professional Web Dev</title>
+    <title>Modern Professional Web Dev</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/league.css">
-		<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/league.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
 
-	<body>
-		<div class="reveal">
-			<div class="slides">
+  <body>
+    <div class="reveal">
+      <div class="slides">
 
-				<!-- Intro -->
-				<section>
-					<h3>A Glimpse Into </h3>
-					<h1>Modern Professional<br/>Web Development</h1>
-					<hr>
-					<p>Jake Wilson</p>
-					<p>Otter Products (OtterBox / LifeProof)</p>
-					<p>jake.e.wilson@gmail.com</p>
-				</section>
+        <!-- Intro -->
+        <section>
+          <h3>A Glimpse Into </h3>
+          <h1>Modern Professional<br/>Web Development</h1>
+          <hr>
+          <p>Jake Wilson</p>
+          <p>Otter Products (OtterBox / LifeProof)</p>
+          <p>jake.e.wilson@gmail.com</p>
+        </section>
 
-				<!-- Outline -->
-				<section>
-					<h2>Outline</h2>
-					<ul>
-						<li>High Level Web Development</li>
-						<li>Advanced Tools and Topics</li>
-					</ul>
-					<br>
-					<br>
-					<p>Questions anytime &bull; Slides Online</p>
-				</section>
+        <!-- Outline -->
+        <section>
+          <h2>Outline</h2>
+          <ul>
+            <li>High Level Web Development</li>
+            <li>Advanced Tools and Topics</li>
+          </ul>
+          <br>
+          <br>
+          <p>Questions anytime &bull; Slides Online</p>
+        </section>
 
-				<!-- Who is involved -->
-				<section>
+        <!-- Who is involved -->
+        <section>
 
-					<section>
-						<h2>Who is involved</h2>
-						<h3>in making a website?</h3>
-					</section>
+          <section>
+            <h2>Who is involved</h2>
+            <h3>in making a website?</h3>
+          </section>
 
-					<section>
-						<h2>Web Developers</h2>
-						<ul>
-							<li class="fragment">Backend Developers</li>
-							<li class="fragment">Front-End Developers</li>
-							<li class="fragment">Full Stack Developers</li>
-							<li class="fragment">Database Developers</li>
-							<li class="fragment">IT Infastructure</li>
-						</ul>
-					</section>
+          <section>
+            <h2>Web Developers</h2>
+            <ul>
+              <li class="fragment">Backend Developers</li>
+              <li class="fragment">Front-End Developers</li>
+              <li class="fragment">Full Stack Developers</li>
+              <li class="fragment">Database Developers</li>
+              <li class="fragment">IT Infastructure</li>
+            </ul>
+          </section>
 
-					<section>
-						<h2>Stakeholders</h2>
-						<p><small>( people who decide what goes in the site )</small></p>
-						<ul>
-							<li class="fragment">Department Directors</li>
-							<li class="fragment">Clients</li>
-							<li class="fragment">Your Boss</li>
-							<li class="fragment">Project Managers</li>
-							<li class="fragment">Non-technical Employees</li>
-						</ul>
-					</section>
+          <section>
+            <h2>Stakeholders</h2>
+            <p><small>( people who decide what goes in the site )</small></p>
+            <ul>
+              <li class="fragment">Department Directors</li>
+              <li class="fragment">Clients</li>
+              <li class="fragment">Your Boss</li>
+              <li class="fragment">Project Managers</li>
+              <li class="fragment">Non-technical Employees</li>
+            </ul>
+          </section>
 
-					<section>
-						<h2>Finally...</h2>
-						<ul>
-							<li class="fragment">Designers</li>
-							<li class="fragment">Copywriters</li>
-							<li class="fragment">Legal</li>
-						</ul>
-					</section>
+          <section>
+            <h2>Finally...</h2>
+            <ul>
+              <li class="fragment">Designers</li>
+              <li class="fragment">Copywriters</li>
+              <li class="fragment">Legal</li>
+            </ul>
+          </section>
 
-				</section>
+        </section>
 
-				<!-- Requirements -->
-				<section>
-					<h2>Define the Requirements</h2>
-						<ul>
-							<li class="fragment">What does the website need to do?</li>
-							<li class="fragment">Who is the website for?</li>
-							<li class="fragment">What is important and what is not important?</li>
-							<li class="fragment">Big list of things for website</li>
-						</ul>
-				</section>
+        <!-- Requirements -->
+        <section>
+          <h2>Define the Requirements</h2>
+            <ul>
+              <li class="fragment">What does the website need to do?</li>
+              <li class="fragment">Who is the website for?</li>
+              <li class="fragment">What is important and what is not important?</li>
+              <li class="fragment">Big list of things for website</li>
+            </ul>
+        </section>
 
-				<!-- Designers -->
-				<section class='designers'>
+        <!-- Designers -->
+        <section class='designers'>
 
-					<section>
-						<h2>Conceptualize</h2>
-						<ul>
-							<li>Involves stakeholders,<br/>designers & developers</li>
-							<li>Very rough</li>
-							<li>Initial Layout</li>
-							<li>Satisfy Stakeholder <br/>Requirements</li>
-						</ul>
-						<img class="stretch" src="img/sketch.jpg">
-					</section>
+          <section>
+            <h2>Conceptualize</h2>
+            <ul>
+              <li>Involves stakeholders,<br/>designers & developers</li>
+              <li>Very rough</li>
+              <li>Initial Layout</li>
+              <li>Satisfy Stakeholder <br/>Requirements</li>
+            </ul>
+            <img class="stretch" src="img/sketch.jpg">
+          </section>
 
-					<section>
-						<img class="stretch" src="img/sketch.jpg">
-					</section>
+          <section>
+            <img class="stretch" src="img/sketch.jpg">
+          </section>
 
-					<section>
-						<h2>Wireframes</h2>
-						<ul>
-							<li>Layout</li>
-							<li>Size of Images</li>
-							<li>Placeholders</li>
-							<li>Font Sizes</li>
-							<li>Typefaces</li>
-						</ul>
-						<img class="stretch" src="img/wireframe.jpg">
-					</section>
+          <section>
+            <h2>Wireframes</h2>
+            <ul>
+              <li>Layout</li>
+              <li>Size of Images</li>
+              <li>Placeholders</li>
+              <li>Font Sizes</li>
+              <li>Typefaces</li>
+            </ul>
+            <img class="stretch" src="img/wireframe.jpg">
+          </section>
 
-					<section>
-						<img class="stretch" src="img/wireframe.jpg">
-					</section>
+          <section>
+            <img class="stretch" src="img/wireframe.jpg">
+          </section>
 
-					<section>
-						<h2>Final Layout</h2>
-						<ul>
-							<li>Actual Images</li>
-							<li>Actual Text</li>
-							<li>Actual Colors</li>
-							<li>Actual Content</li>
-							<li>Ready for Development</li>
-						</ul>
-						<img class="stretch" src="img/layout.jpg">
-					</section>
+          <section>
+            <h2>Final Layout</h2>
+            <ul>
+              <li>Actual Images</li>
+              <li>Actual Text</li>
+              <li>Actual Colors</li>
+              <li>Actual Content</li>
+              <li>Ready for Development</li>
+            </ul>
+            <img class="stretch" src="img/layout.jpg">
+          </section>
 
-					<section>
-						<img class="stretch" src="img/layout.jpg">
-					</section>
+          <section>
+            <img class="stretch" src="img/layout.jpg">
+          </section>
 
-				</section>
+        </section>
 
-				<!-- Front-End Development -->
-				<section>
-					<h2>Front-End Development</h2>
-					<ul>
-						<li class="fragment">Working with Designers</li>
-						<li class="fragment">Writing the HTML</li>
-						<li class="fragment">Styling with CSS</li>
-						<li class="fragment">Writing JavaScript &amp; jQuery</li>
-					</ul>
-				</section>
+        <!-- Front-End Development -->
+        <section>
+          <h2>Front-End Development</h2>
+          <ul>
+            <li class="fragment">Working with Designers</li>
+            <li class="fragment">Writing the HTML</li>
+            <li class="fragment">Styling with CSS</li>
+            <li class="fragment">Writing JavaScript &amp; jQuery</li>
+          </ul>
+        </section>
 
-				<!-- Backend Development -->
-				<section>
-					<section>
-						<h2>Backend Development</h2>
-						<ul>
-							<li class="fragment">Writing the backend code</li>
-							<li class="fragment">Handling requests</li>
-							<li class="fragment">Processing &amp; Validating Forms</li>
-							<li class="fragment">Serving up the HTML</li>
-							<li class="fragment">Communicating with APIs</li>
-							<li class="fragment">Communication with Database</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Database Modeling</h3>
-						<img src="img/db-modeling.gif" class="stretch">
-					</section>
-				</section>
+        <!-- Backend Development -->
+        <section>
+          <section>
+            <h2>Backend Development</h2>
+            <ul>
+              <li class="fragment">Writing the backend code</li>
+              <li class="fragment">Handling requests</li>
+              <li class="fragment">Processing &amp; Validating Forms</li>
+              <li class="fragment">Serving up the HTML</li>
+              <li class="fragment">Communicating with APIs</li>
+              <li class="fragment">Communication with Database</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Database Modeling</h3>
+            <img src="img/db-modeling.gif" class="stretch">
+          </section>
+        </section>
 
-				<!-- Environments -->
-				<section>
-					<section>
-						<h2>Environments</h2>
-						<ul>
-							<li>Production</li>
-							<li>Development</li>
-							<li>Testing</li>
-							<li>Staging</li>
-						</ul>
-					</section>
+        <!-- Environments -->
+        <section>
+          <section>
+            <h2>Environments</h2>
+            <ul>
+              <li>Production</li>
+              <li>Development</li>
+              <li>Testing</li>
+              <li>Staging</li>
+            </ul>
+          </section>
 
-					<section>
-						<h2>Production</h2>
-						<ul>
-							<li class="fragment">Public facing</li>
-							<li class="fragment">Highly Optimized</li>
-							<li class="fragment">Don't ever make edits here!</li>
-						</ul>
-					</section>
+          <section>
+            <h2>Production</h2>
+            <ul>
+              <li class="fragment">Public facing</li>
+              <li class="fragment">Highly Optimized</li>
+              <li class="fragment">Don't ever make edits here!</li>
+            </ul>
+          </section>
 
-					<section>
-						<h2>Development</h2>
-						<ul>
-							<li class="fragment">Your Sandbox</li>
-							<li class="fragment">One per developer</li>
-							<li class="fragment">Physical or Virtual Server</li>
-							<li class="fragment">Disposable</li>
-							<li class="fragment">Screw around, no big deal</li>
-						</ul>
-					</section>
+          <section>
+            <h2>Development</h2>
+            <ul>
+              <li class="fragment">Your Sandbox</li>
+              <li class="fragment">One per developer</li>
+              <li class="fragment">Physical or Virtual Server</li>
+              <li class="fragment">Disposable</li>
+              <li class="fragment">Screw around, no big deal</li>
+            </ul>
+          </section>
 
-					<section>
-						<h2>Testing</h2>
-						<ul>
-							<li class="fragment">Functional and Automated Tests</li>
-							<li class="fragment">Accessed by QA, Stakeholders, etc</li>
-							<li class="fragment">Separate from Dev</li>
-						</ul>
-					</section>
+          <section>
+            <h2>Testing</h2>
+            <ul>
+              <li class="fragment">Functional and Automated Tests</li>
+              <li class="fragment">Accessed by QA, Stakeholders, etc</li>
+              <li class="fragment">Separate from Dev</li>
+            </ul>
+          </section>
 
-					<section>
-						<h2>Staging</h2>
-						<ul>
-							<li class="fragment">Right before production</li>
-							<li class="fragment">Nearly identical to Prod</li>
-						</ul>
-					</section>
+          <section>
+            <h2>Staging</h2>
+            <ul>
+              <li class="fragment">Right before production</li>
+              <li class="fragment">Nearly identical to Prod</li>
+            </ul>
+          </section>
 
-				</section>
+        </section>
 
+        <section>
+          <h1>Advanced Topics</h1>
+          <small>Next level stuff</small>
+        </section>
 
+        <!-- Frameworks and Libraries -->
+        <section>
+          <h2>Tools, Frameworks &amp; Libraries</h2>
+          <ul>
+            <li class="fragment">Easier and Faster Development</li>
+            <li class="fragment">CAUTION: Don't skip the basics</li>
+            <li class="fragment">1st grader using calculator == bad</li>
+          </ul>
+        </section>
 
+        <!-- CSS Preprocessors -->
+        <section>
 
+          <section>
+            <h2>CSS Preprocessors</h2>
+            <ul>
+              <li class="fragment">CSS is easy. At first...</li>
+              <li class="fragment">As it grows, it becomes tricky</li>
+              <li class="fragment">1000+ lines of CSS == difficult to maintain</li>
+            </ul>
+          </section>
 
-				<!-- Frameworks and Libraries -->
+          <section>
+            <h2>CSS Preprocessors</h2>
+            <div class="table">
+              <div class="table-cell table-cell--2">
+                <img src="img/sass.png">
+                <p>www.sass-lang.com</p>
+              </div>
+              <div class="table-cell table-cell--2">
+                <img src="img/less.png">
+                <p>lesscss.org</p>
+              </div>
+            </div>
+          </section>
 
-				<!-- CSS Preprocessors -->
+          <section>
+            <h3>$variables</h3>
+            <div class="table">
+              <div class="table-cell table-cell--2">
+                Before
+                <pre><code data-trim>
+$primary-font: Helvetica, Arial, sans-serif;
+$secondary-font: Monoco, sans-serif;
+$primary-color: #F00;
 
-				<!-- Backend Languages -->
+h1,h2,h3 {
+  font-family: $primary-font;
+  color: $primary-color;
+}
 
-				<!-- PHP Frameworks -->
+article {
+  font-family: $secondary-font;
+}
+                </code></pre>
+              </div>
+              <div class="table-cell table-cell--2">
+              After
+                <pre><code data-trim>
+h1,h2,h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+}
 
-				<!-- Node.js -->
+article {
+  font-family: Monoco, sans-serif;
+}
+</code></pre>
+              </div>
+            </div>
+          </section>
 
-				<!-- Source Control -->
+          <section>
+            <h3>Importing</h3>
+            <div class="table">
+              <div class="table-cell table-cell--2">
+                headlines.scss
+                <pre><code data-trim>
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 24px;
+}
+                </code></pre>
 
-				<!-- Templating -->
+                footer.scss
+                <pre><code data-trim>
+.footer {
+  background: #333;
+  color: white;
+}
+                </code></pre>
+                main.scss
+                <pre><code data-trim>
+@import "headlines";
+@import "footer";
+                </code></pre>
 
-				<!-- ORMs and Query Builders -->
+              </div>
+              <div class="table-cell table-cell--2">
 
-				<!-- Responsive Design -->
+                main.css
+                <pre><code data-trim>
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 24px;
+}
+.footer {
+  background: #333;
+  color: white;
+}
+                </code></pre>
+              </div>
+            </div>
+          </section>
 
-				<!-- Font Icons and SVGs -->
+          <section>
+            <h3>Nesting</h3>
+            <div class="table">
+              <div class="table-cell table-cell--2">
+                Before
+                <pre><code data-trim>
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-				<!-- CDNs -->
+  li {
+    display: inline-block;
 
-				<!-- Tools -->
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
 
-				<!-- Learning Resources -->
+      &.purple { color: purple; }
+    }
+  }
+}
+                </code></pre>
 
-				<!-- Photoshop -->
+              </div>
+              <div class="table-cell table-cell--2">
 
-			</div>
-		</div>
+                After
+                <pre><code data-trim>
+nav ul {
+  margin: 0;
+  list-style: none;
+}
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+nav li {
+    display: inline-block;
+}
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
-				transition: 'concave',
-				controls: false,
+nav li a {
+  display: block;
+  padding: 6px 12px;
+}
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/zoom-js/zoom.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+nav li a.purple {
+  color: purple;
+}
+                </code></pre>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>CSS Preprocessors</h2>
+            <div class="table">
+              <div class="table-cell table-cell--2">
+                <img src="img/sass.png">
+                <p>www.sass-lang.com</p>
+                <p class="fragment"> <i class="fa fa-star"></i> learn this one</p>
+              </div>
+              <div class="table-cell table-cell--2">
+                <img src="img/less.png">
+                <p>lesscss.org</p>
+              </div>
+            </div>
+          </section>
+
+        </section>
+
+        <!-- Backend Languages -->
+        <section>
+          <h2>Server-side Languages</h2>
+          <div class="table">
+            <div class="table-cell table-cell--3">
+              <img src="img/php.png">
+            </div>
+            <div class="table-cell table-cell--3">
+              <img src="img/nodejs.png">
+            </div>
+            <div class="table-cell table-cell--3">
+              <img src="img/python.png">
+            </div>
+          </div>
+          <div class="table">
+            <div class="table-cell table-cell--3">
+              <img src="img/go.png">
+            </div>
+            <div class="table-cell table-cell--3">
+              <img src="img/ruby.png">
+            </div>
+            <div class="table-cell table-cell--3">
+              <img src="img/aspnet.png">
+            </div>
+          </div>
+        </section>
+
+        <!-- PHP Frameworks -->
+        <section>
+          <h2>PHP Frameworks</h2>
+          <div class="table">
+            <div class="table-cell table-cell--3">
+              <img src="img/laravel.png">
+            </div>
+            <div class="table-cell table-cell--3">
+              <img src="img/symfony.png">
+            </div>
+            <div class="table-cell table-cell--3">
+              <img src="img/cake.png">
+            </div>
+          </div>
+        </section>
+
+        <!-- Node.js -->
+
+        <!-- Source Control -->
+
+        <!-- Templating -->
+
+        <!-- ORMs and Query Builders -->
+
+        <!-- Responsive Design -->
+
+        <!-- Font Icons and SVGs -->
+
+        <!-- CDNs -->
+
+        <!-- Tools -->
+
+        <!-- Learning Resources -->
+
+        <!-- Photoshop -->
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+        transition: 'concave',
+        controls: false,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/zoom-js/zoom.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
 </html>
